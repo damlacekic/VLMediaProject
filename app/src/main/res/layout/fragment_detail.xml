@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/margin_horizontal_linear_layout"
+            android:orientation="vertical"
+            tools:context=".fragment.DetailFragment">
+
+            <TextView
+                android:id="@+id/tvDetailName"
+                style="@style/Typography.Bold.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_fragment_name_view"
+                android:text="@string/details" />
+
+            <View
+                android:id="@+id/divider_overview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_view_height"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:background="@color/mainColor" />
+
+            <ImageView
+                android:id="@+id/ivDetail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_image_height"
+                android:layout_marginTop="@dimen/margin_top_first_view"></ImageView>
+
+            <TextView
+                style="@style/TypographyBlack.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:text="@string/status"
+
+                ></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/statusColor"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="@dimen/view_margin_top"
+                    android:background="@drawable/status_shape_red"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvStatusSpecies"
+                    style="@style/Typography.Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/details_status_text_margin_left"
+                    android:layout_marginTop="@dimen/details_status_text_margin_top"
+
+                    ></TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TypographyBlack.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_top"
+                android:text="@string/last_known_location"
+
+                ></TextView>
+
+            <TextView
+                android:id="@+id/tvLastLocation"
+                style="@style/Typography.Bold"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_top"
+
+                ></TextView>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</layout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_horizontal_linear_layout">20dp</dimen>
+    <dimen name="margin_top_first_view">30dp</dimen>
+    <dimen name="margin_fragment_name_view">50dp</dimen>
+
+    <dimen name="line_view_height">6dp</dimen>
+    <dimen name="view_margin_top">10dp</dimen>
+    <dimen name="detail_image_height">300dp</dimen>
+    <dimen name="details_status_text_margin_top">3dp</dimen>
+    <dimen name="details_status_text_margin_left">10dp</dimen>
+    <dimen name="card_view_rw_margin_left_right">5dp</dimen>
+    <dimen name="card_view_rw_margin_top_botton">10dp</dimen>
+
+    <dimen name="card_view_corner">20dp</dimen>
+    <dimen name="card_view_height">310dp</dimen>
+    <dimen name="card_view_image_height">230dp</dimen>
+    <dimen name="card_view_text_heigh">65dp</dimen>
+    <dimen name="rw_margin_botton">30dp</dimen>
+</resources>

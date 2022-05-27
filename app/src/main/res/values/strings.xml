@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VLMediaProject</string>
+
+    <string name="characters">Characters</string>
+    <string name="details">Details</string>
+    <string name="status">Status</string>
+    <string name="last_known_location">Last Known Location</string>
+</resources>
