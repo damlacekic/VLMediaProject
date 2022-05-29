@@ -26,7 +26,7 @@ class CharacterRwAdapter(private val characterList: List<Result>) :
         val currentItem = characterList[position]
         val currentSrc = currentItem.image
         holder.itemView.tvCharacterAd.text = currentItem.name
-        holder.itemView.imageCharacter.downloadFromURL(
+        holder.itemView.ivCharacter.downloadFromURL(
             currentSrc,
             placeHolderProgressBar(holder.itemView.context)
         )

@@ -28,9 +28,9 @@ class ListFragment : Fragment() {
         binding = FragmentListBinding.inflate(inflater, container, false)
         listViewModel.getCharacter()
         listViewModel.myResponse.observe(viewLifecycleOwner) { character ->
-            recyclerView = binding.recyclerViewCharacter
+            recyclerView = binding.rvCharacter
             val characterAdapter = CharacterRwAdapter(character.results)
-            binding.recyclerViewCharacter.apply {
+            binding.rvCharacter.apply {
                 adapter = characterAdapter
                 layoutManager = GridLayoutManager(requireContext(), 2)
             }
