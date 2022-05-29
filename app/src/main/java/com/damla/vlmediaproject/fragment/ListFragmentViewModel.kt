@@ -10,12 +10,12 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class ListFragmentViewModel : ViewModel() {
+class ListFragmentViewModel(private val repository : ApiRepository) : ViewModel() {
 
     var myResponse: MutableLiveData<Character> = MutableLiveData()
-    private val repository by lazy {
-        ApiRepository()
-    }
+//    private val repository by lazy {
+//        ApiRepository()
+//    }
 
     fun getCharacter() {
         viewModelScope.launch {

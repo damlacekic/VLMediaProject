@@ -4,8 +4,7 @@ import com.damla.vlmediaproject.api.model.Result
 import com.damla.vlmediaproject.api.model.Character
 import retrofit2.Call
 
-class ApiRepository {
-    private val api by lazy { RetrofitInstance.api }
+class ApiRepository(private val api : SimpleApi) {
     fun getCharacter(): Call<Character> {
         return api.getCharacter()
     }

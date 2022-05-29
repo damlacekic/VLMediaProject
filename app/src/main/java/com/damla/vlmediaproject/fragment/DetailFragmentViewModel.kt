@@ -10,12 +10,12 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class DetailFragmentViewModel : ViewModel() {
+class DetailFragmentViewModel(private val repository : ApiRepository) : ViewModel() {
 
     var myResponseSingle: MutableLiveData<Result> = MutableLiveData()
-    private val repository by lazy {
-        ApiRepository()
-    }
+//    private val repository by lazy {
+//        ApiRepository()
+//    }
 
     fun getSingleCharacter(characterId: Int) {
         viewModelScope.launch {
