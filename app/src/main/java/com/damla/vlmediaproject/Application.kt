@@ -12,7 +12,7 @@ class Application : Application() {
 
         startKoin {
             androidContext(this@Application)
-            modules(KoinModule.appModule)
+            modules(KoinModule.viewModelModule,KoinModule.apiModule,KoinModule.recyclerViewModule)
         }
     }
 

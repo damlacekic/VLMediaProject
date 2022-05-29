@@ -15,26 +15,28 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 object KoinModule {
 
-    val appModule = module {
+    val viewModelModule = module {
         viewModel { ListFragmentViewModel(get()) }
         viewModel { DetailFragmentViewModel(get()) }
-        single {
-            Retrofit.Builder()
-                .addConverterFactory(MoshiConverterFactory.create(Moshi.Builder()
-        .add(KotlinJsonAdapterFactory())
-        .build())).baseUrl(
-                    Constant.BASE_URL
-                )
-                .build().create(SimpleApi::class.java)
-
-        }
-        single {
-                ApiRepository(get())
-        }
+    }
+    val recyclerViewModule = module{
         single {
             CharacterRwAdapter(get())
         }
-
+    }
+    val apiModule = module{
+        single {
+            Retrofit.Builder()
+                .addConverterFactory(MoshiConverterFactory.create(Moshi.Builder()
+                    .add(KotlinJsonAdapterFactory())
+                    .build())).baseUrl(
+                    Constant.BASE_URL
+                )
+                .build().create(SimpleApi::class.java)
+        }
+        single {
+            ApiRepository(get())
+        }
 
     }
 
