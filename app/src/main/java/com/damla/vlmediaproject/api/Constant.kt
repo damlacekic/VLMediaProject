@@ -1,5 +1,6 @@
 package com.damla.vlmediaproject.api
 
+@Suppress("UtilityClassWithPublicConstructor")
 class Constant {
 
     companion object {

@@ -17,8 +17,14 @@ fun ImageView.downloadFromURL(url: String?, placeholderprogressBar: CircularProg
 @SuppressLint("ResourceAsColor")
 fun placeHolderProgressBar(context: Context): CircularProgressDrawable {
     return CircularProgressDrawable(context).apply {
-        strokeWidth = 8f
-        centerRadius = 40f
+        strokeWidth = placeHolder.STROKE_WIDTH
+        centerRadius = placeHolder.CENTER_RADIUS
         start()
     }
+}
+
+@Suppress("ClassNaming")
+object placeHolder{
+    const val STROKE_WIDTH = 8f
+    const val CENTER_RADIUS = 40f
 }
