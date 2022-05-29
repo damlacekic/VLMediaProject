@@ -18,7 +18,7 @@ Used Technologies
 * Glide
 * RecyclerView
 
-![Mockup 02](https://user-images.githubusercontent.com/72108390/170865545-fdb78a2e-a5f9-4c7f-b873-fd871dc87fb1.png)
+![Mockup 02](https://user-images.githubusercontent.com/72108390/170865701-0fb385c8-ec20-4ca9-8438-5e1db225f295.png)
 
 A splash screen greets us when the app is first opened
 
