@@ -1,7 +1,5 @@
 # VLMediaProject
 
-This project is designed to fulfill the assignment of VLMedia 
-
 The aim of the project is to see Rick and Morty Characters in a list and reach details of the choosen character.
 
 I have used https://rickandmortyapi.com/ for the API
