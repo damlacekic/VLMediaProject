@@ -17,6 +17,7 @@ Used Technologies
 * View Binding
 * Glide
 * RecyclerView
+* MVVM Architecture
 
 ![Mockup 02](https://user-images.githubusercontent.com/72108390/170866013-fa5010d0-3527-41f1-830c-726fbc064068.png)
 
